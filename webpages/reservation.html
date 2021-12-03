@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="scripting" href="../jss/scripting.js">
+<title>Santani LK home page</title>
+</head>
+<body>
+<script src="/jss/reservations.js"></script>
+<nav>
+<div class="container">
+    <div class="logo">
+        <a href="home.html"><img src="../images/logo.gif" alt="logo"></a>
+    </div>
+<div class="navbar">
+
+<div class="icon-bar" onclick="Show()">
+    <i></i>
+    <i></i>
+    <i></i>
+</div>
+
+<ul id="nav-lists">
+    <li class="close"><span onclick="Hide()">×</span></li>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="accomadations.html">Accomadation</a></li>
+    <li><a href="dining.html">Dining</a></li>
+    <li><a href="reservation.html">Reservations</a></li>
+    <li><a href="contactus.html">ContactUs</a></li>
+</ul>
+
+</div>
+</div>
+</nav>
+
+
+
+
+
+<div class="rimage"></div>
+<br><br>
+
+<div class="rtext">
+    <div class="reservation">
+        <form>
+            <fieldset>
+
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="">
+              
+          <label for="email">Email</label>
+          <input type="email" name ='email'>
+          <label for="tel">Telephone Number</label>
+          <input type="tel"><br><br>
+
+          <label>Number of Days:</label><br>
+          <input type="number" name="numofdays" placeholder="Number of days" id="numofdays" min="1" required><br><br>
+
+          <label>Number of Guests:</label><br>
+          <input type="number" name="numofguests" id="numofguests" min="1" max="4" required><br><br>
+
+          <label>Room type:</label><br>
+          <input type="radio" name="roomtype" value="Superior Room" id="superior">
+          <label for="superior">Superior Room</label><br>
+
+          <input type="radio" name="roomtype" value="Deluxe Room" id="deluxe">
+          <label for="deluxe">Deluxe Room</label><br>
+
+          <input type="radio" name="roomtype" value="Junior Suite Room" id="juniorSuite">
+          <label for="juniorSuite">Junior Suite Room</label><br>
+
+          <input type="radio" name="roomtype" value="Presidential Suite Room" id="presidentialSuite">
+          <label for="presidentialSuite">Presidential Suite Room</label><br><br>
+
+          <label>Meal Type:</label><br>
+          
+          <input type="radio" value="BB" id="bb" name="mealtype">
+          <label for="bb">Breakfast and Bed</label><br>
+
+          <input type="radio" value="HB" id="hb" name="mealtype">
+          <label for="hb">Half Board</label><br>
+
+          <input type="radio" value="FB" id="fb" name="mealtype">
+          <label for="fb">Full Board</label><br>
+          </fieldset><br><br>
+          <input type="button" value="Add to reserved" id="addtoreserve">
+          <input type="reset" value="Clear" id="clearformdata">
+          <p>
+              <textarea id="res" rows="5"></textarea><br><br>
+
+              <textarea id="rescost" rows="2"></textarea><br><br>
+
+              <input type="button" value="Confirm Reserved" id="reserve">
+
+              <input type="button" value="Clear Reserved" id="clear"><br><br>
+
+              <textarea id="final" rows="5"> </textarea><br><br>
+
+              <input type="button" id="addtofav" value="Add to favorites">
+
+          </p>
+
+      
+         </form>
+
+</div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="footer-section">
+    <div class="footer-section-summary">
+        <h3><i class="fa fa-wrench fa-flip-horizontal" aria-hidden="true"></i> Santani LK</h3>
+        <br><p>Hope you have a wondeful day. Make sure to contact us for any issues.</p>
+        <br>
+        <br>
+        <p>
+            <i class="fa fa-google-plus" aria-hidden="true" style="margin-right: 10px;"></i>
+            <i class="fa fa-facebook-official" aria-hidden="true" style="margin-right: 10px;"></i>
+            <i class="fa fa-twitter" aria-hidden="true" style="margin-right: 10px;"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </p>
+    </div>
+    <div class="footer-section-links">
+        <h3>Useful links</h3>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="accomadations.html">Accomadations</a></li>
+            <li><a href="dining.html"></a>Dining</li>
+            
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="footer-section-contact">
+        <h3>Contact Us</h3>
+        <p>
+            +948472949824 <br>
+            santani.lk@gmail.com
+        </p>
+    </div>
+</div>
+
+
+</body>
+</html>
